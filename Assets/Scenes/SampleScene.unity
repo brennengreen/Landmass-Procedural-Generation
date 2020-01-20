@@ -224,10 +224,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6a373e21a4a9984b8557ee061081a8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mapWidth: 100
+  drawMode: 1
+  mapWidth: 150
   mapHeight: 100
-  noiseScale: 1.29
+  noiseScale: 35
+  octaves: 4
+  persistance: 0.43
+  lacunarity: 2.36
+  seed: 17
+  offset: {x: 2.3, y: 7.02}
   autoUpdate: 1
+  regions:
+  - name: Water
+    height: 0.35
+    color: {r: 0, g: 0.44399452, b: 1, a: 0}
+  - name: Mud
+    height: 0.45
+    color: {r: 0.2924528, g: 0.25758585, b: 0.2441705, a: 0}
+  - name: Meadow
+    height: 0.5
+    color: {r: 0.4319277, g: 0.6037736, b: 0.40726238, a: 0}
+  - name: MountainGrass
+    height: 0.7
+    color: {r: 0.33555254, g: 0.509434, b: 0.30037382, a: 0}
+  - name: Hill
+    height: 0.8
+    color: {r: 0.46226418, g: 0.4080191, b: 0.34233716, a: 0}
+  - name: Cliff
+    height: 0.9
+    color: {r: 0.3490566, g: 0.30981517, b: 0.25849947, a: 0}
+  - name: Snow
+    height: 1
+    color: {r: 0.9433962, g: 0.9433962, b: 0.9433962, a: 0}
 --- !u!4 &486687997
 Transform:
   m_ObjectHideFlags: 0
@@ -396,7 +424,7 @@ Transform:
   m_GameObject: {fileID: 1040833452}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 100, y: 1, z: 100}
+  m_LocalScale: {x: 150, y: 1, z: 100}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
